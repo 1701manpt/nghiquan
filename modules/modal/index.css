@@ -1,0 +1,91 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 3;
+}
+.modal-backdrop-active {
+  display: block;
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 3;
+}
+.modal-container-active {
+  display: flex;
+}
+.modal-content {
+  position: relative;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 72px 4px black;
+  width: 50%;
+  margin-top: 100px;
+}
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: orangered;
+}
+.modal-header-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 4px;
+  border-radius: 0 8px 0 8px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.modal-header-close:hover {
+  background-color: rgba(0, 0, 0, 0.125);
+  color: black;
+}
+.modal-body {
+  margin: 16px 0;
+}
+.modal-footer {
+  display: flex;
+  justify-content: end;
+}
+.modal-footer-close {
+  padding: 8px;
+  margin-right: 8px;
+  color: black;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.modal-footer-close:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-footer-save {
+  padding: 8px;
+  color: orangered;
+  background-color: white;
+  border: 1px solid orangered;
+  border-radius: 8px;
+}
+.modal-footer-save:hover {
+  color: white;
+  background-color: orangered;
+}
+
+/*# sourceMappingURL=index.css.map */
