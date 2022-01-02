@@ -711,7 +711,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: unset;
   }
   .body__item--title {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .body__item--container {
     padding: 8px;
@@ -725,13 +725,24 @@ body::-webkit-scrollbar-thumb {
   .body__item--subitem--img {
     width: calc((100vw - 0px - 32px - 16px) / 3);
   }
+  .body__item--subitem--price {
+    font-size: 1em;
+  }
+  .body__item.-flashsale .body__item--subitem--saleoff-percent {
+    font-size: 0.75em;
+    padding: 4px;
+  }
+  .body__item.-flashsale .body__item--subitem--price {
+    font-size: 1em;
+  }
   .body__item.-all .body__item--container {
     background-color: white;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
   }
   .body__item.-all .body__item--subitem {
-    width: calc((100vw - 16px - 32px - 8px) / 2);
+    margin: unset;
+    width: calc((100vw - 0px - 32px - 8px) / 2);
   }
 
   .footer {

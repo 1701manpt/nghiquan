@@ -920,6 +920,7 @@ body {
             &--icon {
                 font-size: 1.5em;
             }
+
             &--title {
                 display: none;
             }
@@ -935,21 +936,40 @@ body {
             border-radius: unset;
 
             &--title {
-                font-size: 1.2em;
+                font-size: 1.1em;
             }
 
             &--container {
                 padding: 8px;
             }
 
-            &--subitem + &--subitem {
+            &--subitem+&--subitem {
                 margin-left: 8px;
             }
 
             &--subitem {
                 border-radius: unset;
+
                 &--img {
                     width: calc((100vw - 0px * 2 - 8px * 4 - 8px * 2) / 3);
+                }
+                &--price {
+                    font-size: 1em;
+                }
+            }
+
+            &.-flashsale {
+                & .body__item {
+                    &--subitem {
+                        &--saleoff-percent {
+                            font-size: 0.75em;
+                            padding: 4px;
+                        }
+
+                        &--price {
+                            font-size: 1em;
+                        }
+                    }
                 }
             }
 
@@ -964,7 +984,8 @@ body {
                     }
 
                     &--subitem {
-                        width: calc((100vw - 8px * 2 - 8px * 4 - 8px * 1) / 2);
+                        margin: unset;
+                        width: calc((100vw - 0px * 2 - 8px * 4 - 8px * 1) / 2);
                     }
                 }
             }
