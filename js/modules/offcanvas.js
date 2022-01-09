@@ -1,4 +1,4 @@
-export default function offcanvasCreate(options) {
+export default function createOffCanvas(options) {
     const backdrop = document.querySelector(options.backdrop)
     const container = document.querySelector(options.container)
     const openBtn = document.querySelector(options.openBtn)
